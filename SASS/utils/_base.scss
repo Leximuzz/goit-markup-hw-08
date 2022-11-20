@@ -1,0 +1,46 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white-color);
+    color: var(--text-color);
+}
+
+a {
+    font-style: normal;
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--main-blue-color);
+}
+
+a:focus {
+    color: var(--main-blue-color);
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+    padding-inline-start: 0;
+}
+img {
+    display: block;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+    margin: 0;
+}
+
+section,
+header,
+footer,
+.backdrop{
+    display: none;
+}
+
+.block{
+    display: block;
+}

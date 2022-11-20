@@ -1,0 +1,113 @@
+.footer {
+    background-color: var(--section-dark-bg);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer__flex {
+    display: flex;
+    align-items: baseline;
+}
+.footer-address {
+    display: flex;
+}
+
+.footer__address-link--color {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__address {
+    margin-top: 20px;
+    font-style: normal;
+    color: var(--white-color);
+}
+.footer__list {
+    margin-top: 9px;
+}
+.footer-icons-list {
+    margin-left: 70px;
+}
+.footer-b-style {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+
+.subsribe__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.subscribe__lable {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    color: var(--white-color);
+}
+
+.footer__subscribe {
+    display: flex;
+    width: 570px;
+    height: 86px;
+    margin-left: 93px;
+    align-items: flex-end;
+}
+
+.subscribe__input {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 16px;
+    background: var(--section-dark-bg);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.subscribe__text {
+    padding-bottom: 20px;
+}
+
+.subsribe__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    margin-left: 12px;
+    background-color: var(--main-blue-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    color: var(--white-color);
+    fill: var(--white-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus {
+        background-color: var(--blue-batton-hover);
+    }
+}
+
