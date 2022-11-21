@@ -1,34 +1,91 @@
 .our-team {
-    padding: 94px 0;
+    padding: 60px 0;
     background-color: var(--section-light-bg);
     margin: 0 auto;
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
 }
 
-.our-team-container {
-    width: 1200px;
-    padding: 94px 15px;
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-}
+// .our-team-container {
+//     width: 1200px;
+//     padding: 94px 15px;
+//     margin: auto;
+//     text-align: center;
+//     justify-content: center;
+// }
 
 .our-team__list {
     display: flex;
+    flex-direction: column;
+    margin-top: 30px;
     gap: 30px;
-    margin-top: 50px;
     justify-content: center;
+
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 60px) / 2);
+        flex-direction: row;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .our-team__card {
+    width: 450px;
+    height: 622px;
+
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 536px;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        width: 270px;
+        height: 428px;
+        justify-content: center;
+    }
+
     background-color: var(--white-color);
     text-align: center;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
+.our-team__img {
+    width: 450px;
+    height: 460px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 374px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 260px;
+    }
+}
+
 .our-team__description {
-    padding: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 30px;
+    }
 }
 
 .our-team__h3--style {
