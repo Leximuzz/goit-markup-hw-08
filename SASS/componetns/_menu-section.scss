@@ -62,7 +62,7 @@
   background-color: var(--white-color);
   z-index: 999;
 
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: transform 250ms ease-in-out;
 }
 
@@ -112,6 +112,10 @@
     color: var(--text-color);
   }
 }
+
+.mobile-menu__linked {
+  color: var(--main-blue-color);
+}
 .mobile__margin{
   margin-top: 302px;
   margin-bottom: 32px;
@@ -127,6 +131,9 @@
 
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+.mobile-menu .linked {
+color: var(--main-blue-color);
 }
 .menu__social{
   display: flex;
