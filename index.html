@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="uk">
 
@@ -43,11 +46,46 @@
             +380961111111</a>
         </li>
       </ul>
-    <a class="mobile-menu" href="#">
-      <svg class="mobile-menu__icon">
-        <use href="./images/icons.svg#menu-icon"></use>
-      </svg>
-    </a>
+
+
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="mobile-menu__icon">
+                  <use href="./images/icons.svg#menu-icon"></use>
+                </svg>
+        </button>
+
+
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+              <svg class="close-btn__modal">
+                <use href="./images/icons.svg#close-btn"></use>
+              </svg>
+      </button>
+    
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="link">Студія</a></li>
+        <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+        <li><a href="" class="link">Контакти</a></li>
+        <li class="mobile__margin"><a class="mobile-menu__phone" href="tel:+380961111111">
+                                    +38 096 111 11 11</a></li>
+        <li><a class="mobile-menu__mail" href="mailto:info@devstudio.com">
+                                    info@devstudio.com</a></li>
+      </ul>
+      <ul class="menu__social">
+        <li><a class="menu__social--blue" href="#">Instagram</a></li>  
+        <li><span class="menu__span">|</span></li>
+        <li><a class="menu__social--blue" href="#">Twitter</a></li>  
+        <li><span class="menu__span">|</span></li>
+        <li><a class="menu__social--blue" href="#">Facebook</a></li>  
+        <li><span class="menu__span">|</span></li>
+        <li><a class="menu__social--blue" href="#">LinkedIn</a></li>  
+      </ul>
+    </div>
+
+
+
     </div>
   </header>
   <main>
@@ -91,7 +129,7 @@
               </div>
               <label for="comment" class="modal__person-comment modal__lable">Коментар</label>
 
-              <textarea class="coment-text-field" rows="6" name="comment" id="comment"
+              <textarea class="modal__coment-field" rows="6" name="comment" id="comment"
                 placeholder="Введіть текст"></textarea>
 
               <input id="checkbox" class="modal__chekbox visually-hidden" type="checkbox" name="checkbox">
@@ -405,8 +443,12 @@
     </div>
   </footer>
   <script src="./js/modal.js"></script>
-  <!--
-    <script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
+  
+    <!-- <script>
   (() => {
       document
         .querySelector('.js-speaker-form')
@@ -418,8 +460,8 @@
           );
         });
     })();
-  </script>
--->
+  </script> -->
+
 </body>
 
 </html>

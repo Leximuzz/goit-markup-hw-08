@@ -54,14 +54,23 @@
     }
 }
 
-
-
-
 .portfolio__list {
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
     gap: 30px;
+        @media screen and (min-width: 768px) {
+                // display: flex;
+                flex-wrap: wrap;
+                flex-basis: calc((100% - 60px) / 2);
+                flex-direction: row;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                margin-top: 50px;
+                // display: flex;
+                flex-direction: row;
+            }
 }
 
 .portfolio__link {
