@@ -11,10 +11,18 @@
     gap: 60px;
     justify-content: center;
 
+    @media screen and (min-width: 768px) {
+            gap: 60;
+            flex-direction: row;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
     @media screen and (min-width: 1200px) {
         gap: 0;
         flex-direction: row;
         align-items: baseline;
+            flex-wrap: nowrap;
     }
 }
 .footer_logo{
@@ -22,12 +30,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-  
+    align-items: center;  
 }
 }
 
 .footer__address-link--color {
+    margin-top: 8px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -40,6 +48,10 @@
     margin-top: 20px;
     font-style: normal;
     color: var(--white-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
 }
 
 .footer__list {
@@ -49,6 +61,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 8px;
+            margin-top: 17px;
     }
 }
 

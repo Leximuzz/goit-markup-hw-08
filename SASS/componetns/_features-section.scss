@@ -58,6 +58,11 @@
   text-transform: uppercase;
   color: var(--main-font-color);
   margin-bottom: 10px;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+
+      }
 }
 
 .feature__p--style {
