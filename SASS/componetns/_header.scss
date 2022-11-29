@@ -43,7 +43,7 @@ margin-left: 87px;
   display: flex;
   align-items: center;
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:767px) {
     display: none;
   }
 }
@@ -95,7 +95,7 @@ margin-left: 87px;
   gap: 50px;
   margin-left: auto;
 
-  @media screen and (max-width:768px) { 
+  @media screen and (max-width:767px) { 
     display: none;
   }
 
