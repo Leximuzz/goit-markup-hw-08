@@ -19,7 +19,10 @@
 .header {
   display: flex;
   align-items: center;
-margin-left: 87px;
+
+  @media screen and (min-width:480px) {
+      margin-left: 87px;
+    }
   @media screen and (max-width:768px) {
     justify-content:space-between;
   }
