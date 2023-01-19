@@ -58,29 +58,34 @@
             <use href="./images/icons.svg#close-btn"></use>
           </svg>
         </button>
-
-        <ul class="mobile-menu">
-          <li><a href="./index.html" class="link linked">Студія</a></li>
-          <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-          <li><a href="" class="link">Контакти</a></li>
-          <li class="mobile__margin">
-            <a class="mobile-menu__phone" href="tel:+380961111111">
-              +38 096 111 11 11</a>
-          </li>
-          <li>
-            <a class="mobile-menu__mail" href="mailto:info@devstudio.com">
-              info@devstudio.com</a>
-          </li>
-        </ul>
-        <ul class="menu__social">
-          <li><a class="menu__social--blue" href="#">Instagram</a></li>
-          <li><span class="menu__span">|</span></li>
-          <li><a class="menu__social--blue" href="#">Twitter</a></li>
-          <li><span class="menu__span">|</span></li>
-          <li><a class="menu__social--blue" href="#">Facebook</a></li>
-          <li><span class="menu__span">|</span></li>
-          <li><a class="menu__social--blue" href="#">LinkedIn</a></li>
-        </ul>
+        <div>
+          <ul class="mobile-menu">
+            <li><a href="./index.html" class="link linked">Студія</a></li>
+            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li><a href="" class="link">Контакти</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a class="mobile-menu__phone" href="tel:+380961111111">
+                +38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__mail-margin">
+              <a class="mobile-menu__mail" href="mailto:info@devstudio.com">
+                info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="menu__social">
+            <li><a class="menu__social--blue" href="#">Instagram</a></li>
+            <li><span class="menu__span">|</span></li>
+            <li><a class="menu__social--blue" href="#">Twitter</a></li>
+            <li><span class="menu__span">|</span></li>
+            <li><a class="menu__social--blue" href="#">Facebook</a></li>
+            <li><span class="menu__span">|</span></li>
+            <li><a class="menu__social--blue" href="#">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -134,7 +139,9 @@
               <label for="checkbox" class="modal__chekbox-lable">Погоджуюся з розсилкою та приймаю
                 <a href="#" class="modal__chekbox-text">Умови договору</a></label>
 
-              <button class="modal-send-button">Відправити</button>
+              <div class="modal__button-position">
+                <button class="modal__send-button">Відправити</button>
+              </div>
             </form>
           </div>
         </div>
@@ -230,8 +237,10 @@
         <ul class="our-team__list">
           <li class="our-team__card">
             <picture>
-              <source media="(min-width: 1200px)" srcset="./images/igdem@1x.jpg 1x, ./images/igdem@1x.jpg 2x" type="image/jpeg">
-              <source media="(min-width: 768px)" srcset="./images/igdem-t@1x.jpg 1x, ./images/igdem-t@2x.jpg 2x" type="image/jpeg">
+              <source media="(min-width: 1200px)" srcset="./images/igdem@1x.jpg 1x, ./images/igdem@1x.jpg 2x"
+                type="image/jpeg">
+              <source media="(min-width: 768px)" srcset="./images/igdem-t@1x.jpg 1x, ./images/igdem-t@2x.jpg 2x"
+                type="image/jpeg">
               <source srcset="./images/igdem-m@1x.jpg 1x, ./images/igdem-m@2x.jpg 2x" type="image/jpeg">
               <img class="our-team__img" src="./images/igdem.jpg" alt="на фото Ігор Дем'янненко - product designer"
                 loading="lazy">

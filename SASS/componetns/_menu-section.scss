@@ -54,6 +54,9 @@
 }
 
 .menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -69,8 +72,8 @@
 }
 
 .menu-container {
-  @media (min-width: 768px) {
 
+  @media (min-width: 768px) {
     display: none;
   }
 }
@@ -81,6 +84,7 @@
 
 
 .menu-container .menu-toggle {
+      width: auto;
   position: absolute;
   top: 16px;
   right: 16px;
@@ -88,21 +92,17 @@
 }
 
 .mobile-menu {
+
   padding: 0;
   margin: 0;
   list-style: none;
 
-   &__phone {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.176;
-    letter-spacing: 0.02em;
-    color: var(--main-blue-color);
-  }
-
+   &__mail-margin{
+    margin-bottom: 64px;
+    margin-top: 32px;
+   }
   // .mobile-menu__mail
-
-  &__mail {
+   &__mail {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.16;
@@ -115,8 +115,22 @@
   &:focus{
   fill: var(--main-blue-color);
   }
+          
 }
+  .mobile-menu__phone {
+       font-weight: 500;
+       font-size: 34px;
+        @media screen and (max-width: 380px) {        
+            font-size: 26px;
+          }
+       line-height: 1.176;
+       letter-spacing: 0.02em;
+       color: var(--main-blue-color);
+  
+     }
 
+           
+            
 .mobile-menu__linked {
   color: var(--main-blue-color);
 }
@@ -148,9 +162,10 @@ fill: var(--blue-batton-hover);
 
 .menu__social {
   display: flex;
-
-  padding-top: 64px;
   gap: 10px;
+    @media (max-width: 480px) {
+        flex-wrap: wrap;
+      }
 }
 
 .menu__social--blue {
