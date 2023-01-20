@@ -10,6 +10,9 @@
   display: flex;
   font-weight: 700;
   font-size: 36px;
+      @media screen and (max-width:327px) {
+        font-size: 34px;
+      }
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-font-color);
